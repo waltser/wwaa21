@@ -124,7 +124,7 @@ Template: twentytwentyone
     #leftcol {
         background-size: cover;
         position: relative;
-        max-width: 33.3%;
+        background-color: mediumspringgreen;
         min-width: 33.3%;
     }
 }
