@@ -1,45 +1,20 @@
 <?php
 /**
- * The header+main
+ * The main template file
  *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
  *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty_One
+ * @since Twenty Twenty-One 1.0
  */
 
-?>
-
-<!doctype html>
-<html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'twentytwentyone' ); ?></a>
-
-	<?php get_template_part( 'template-parts/header/site-header' ); ?>
-
-	<div id="content" class="site-content">
-		<div id="primary" class="content-area">
-	
-        <div id="introduction">
-<?php
-    // query for the about page
-    $your_query = new WP_Query( 'pagename=description' );
-    // "loop" through query (even though it's just one page) 
-    while ( $your_query->have_posts() ) : $your_query->the_post();
-        the_content();
-    endwhile;
-    // reset post data (important!)
-    wp_reset_postdata();
-?>
-</div>
-
-			<main id="main" class="site-main" role="main">
-
+ get_header(); ?>
 
 
 <div id="listfruit">
@@ -49,7 +24,7 @@
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
 				<div id="fruit">
-				<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">
+				<a class="modal-link"  href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">
 
 					<div class='imagefruit' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
 
