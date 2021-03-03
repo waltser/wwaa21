@@ -1,17 +1,12 @@
 <?php
 /**
- * The header.
+ * The header+main
  *
- * This is the template that displays all of the <head> section and everything up until main.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
  */
 
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); ?>>
 <head>
@@ -29,9 +24,12 @@
 
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area">
-			
-
+	
         <div id="introduction">
+		<div class="bannerlogo" ><img class="bannerlogopic"
+     src="http://localhost/wordpress/wp-content/uploads/2021/03/wwaa21Logo.png"
+     alt="wwaa21 logo"></div>
+		<div class="introtext">
 <?php
     // query for the about page
     $your_query = new WP_Query( 'pagename=description' );
@@ -42,6 +40,7 @@
     // reset post data (important!)
     wp_reset_postdata();
 ?>
+</div>
 </div>
 
 			<main id="main" class="site-main" role="main">

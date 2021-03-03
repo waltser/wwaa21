@@ -23,13 +23,21 @@
 				$image = get_sub_field('image'); ?>
 				<div id="leftcol">
 
-					<div class='imagefruit' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
+					<img class='imagefruit' src="<?php echo esc_url($image['url']); ?>">
 					<div class="bio">
 							<?php the_field('bio'); ?>
 						</div>
 
 						</div>
 
+						<?php endwhile; ?>
+		<?php endif; ?>
+
+	
+
+					<div id="fruitcontent">
+					<?php if (have_rows('fruit')) : ?>
+			<?php while (have_rows('fruit')) : the_row();?>
 					<div id="fruitdetail">
 						<div class="name">
 							<?php the_sub_field('name'); ?>
@@ -42,25 +50,29 @@
 					<?php endwhile; ?>
 		<?php endif; ?>
 
+						
 					<?php if (have_rows('contact')) : ?>
 			<?php while (have_rows('contact')) : the_row();?>
 					
 					<div id="contact">
-						<div class="twitter">
-							<?php the_sub_field('twitter'); ?>
+						<div class="twitter fruitsm">
+							<a href="<?php the_sub_field('twitter'); ?>"><i class="fab fa-twitter coral">	</i></a>
+							
 						</div>
-						<div class="linkedin">
-							<?php the_sub_field('linkedin'); ?>
+						<div class="linkedin fruitsm">
+						<a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin coral">	</i></a>
+
+						
 						</div>
-						<div class="tofruit">
-							<?php the_sub_field('mail'); ?>
+						<div class="tofruit fruitsm">
+						<a href="<?php the_sub_field('mail'); ?>"><i class="fas fa-envelope-open-text coral"></i></a>
+
+							
 						</div>
 					</div>
 					
 			<?php endwhile; ?>
 		<?php endif; ?>
-
-					<div id="fruitcontent">
 					
 						<div class="interview">
 							<?php the_field('interview'); ?>
