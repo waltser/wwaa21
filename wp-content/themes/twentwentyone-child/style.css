@@ -8,6 +8,11 @@ Author: GGG
 Template: twentytwentyone
 */
 
+::selection {
+    color: black;
+    background: pink;
+}
+
 .site-main>* {
     margin-top: 0;
     margin-bottom: 0;
@@ -18,7 +23,6 @@ Template: twentytwentyone
     #masthead {
         height: 9vh;
         min-height: 80px;
-        align-items: baseline;
         padding: initial;
     }
     .site-logo {
@@ -36,11 +40,23 @@ Template: twentytwentyone
         margin-left: 1vh;
     }
     .site-title,
-    .site-title>* {
-        font-weight: bold;
+    .site-title>a {
+        text-decoration: none;
+        color: black !important;
+        font-weight: bold !important;
+    }
+    .site-title>a:hover {
+        text-decoration: none;
+        color: pink;
+        font-weight: bold !important;
+    }
+    .site-title>a:focus {
+        text-decoration: none !important;
+        background: pink !important;
+        font-weight: bold !important;
     }
     .primary-navigation {
-        margin-right: 2vh;
+        margin-right: 2vw;
     }
     .site-header {
         max-width: 100vw !important;
@@ -48,7 +64,7 @@ Template: twentytwentyone
         margin-right: 0;
         flex-wrap: nowrap;
     }
-    /* home page styles */
+    /*                                                       home page styles                                      */
     html {
         overflow-x: hidden !important;
         height: 100vh;
@@ -139,8 +155,8 @@ Template: twentytwentyone
         filter: brightness(80%);
     }
     .home #fruitdetail {
-        background: linear-gradient(0deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 0) 100%);
-        height: 20vh;
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 15vh;
         position: absolute;
         bottom: 0px;
         width: 100%;
@@ -149,13 +165,253 @@ Template: twentytwentyone
     .home #fruit .name {
         font-size: 2rem;
         font-weight: bolder;
-        color: whitesmoke;
+        color: black;
         margin-bottom: -1.2rem;
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 10px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        background-color: white;
+        text-transform: uppercase;
     }
     .home #fruit .job {
-        color: greenyellow;
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 20px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        font-size: 20px;
+        background-color: pink;
+        color: #black;
+        font-weight: bolder;
     }
-    /* single page styles */
+    .job-bg {}
+    /*                                                       year 2020 page styles                                      */
+    .page-template-yeartwenty #content {
+        height: 100%;
+    }
+    .page-template-yeartwenty #primary {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .page-template-yeartwenty .bannerlogo {
+        background-color: white !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        width: 100%;
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerlogopic {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .page-template-yeartwenty #introduction {
+        position: relative;
+        bottom: 0;
+        color: white;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        flex: 0 0 25%;
+        max-width: 25%;
+        min-width: 25%;
+    }
+    .introtext {
+        overflow: overlay;
+        max-height: 56vh;
+    }
+    .page-template-yeartwenty #introduction p {
+        margin: 2rem;
+        margin-right: 3rem;
+        font-size: 0.9rem;
+    }
+    .page-template-yeartwenty main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 75%;
+        min-width: 75%;
+        flex: 0 0 75%;
+        position: relative;
+        overflow: overlay;
+        max-height: 91vh;
+    }
+    .page-template-yeartwenty #listfruit {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 0;
+    }
+    .page-template-yeartwenty #fruit {
+        box-sizing: border-box;
+        flex: 0 0 100%;
+        max-width: 33.3%;
+        min-width: 33.3%;
+        height: 35vh;
+        background-size: cover;
+        position: relative;
+    }
+    .page-template-yeartwenty .imagefruit {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+    .page-template-yeartwenty #fruitdetail {
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 15vh;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 17px;
+    }
+    .page-template-yeartwenty #fruit .name {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: black;
+        margin-bottom: -1.2rem;
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 10px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    .page-template-yeartwenty #fruit .job {
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 20px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        font-size: 20px;
+        background-color: pink;
+        color: #black;
+        font-weight: bolder;
+    }
+    .job-bg {}
+    /*                                                       year 2021 page styles                                      */
+    .page-template-yeartwentyone #content {
+        height: 100%;
+    }
+    .page-template-yeartwentyone #primary {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .page-template-yeartwentyone .bannerlogo {
+        background-color: white !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        width: 100%;
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerlogopic {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .page-template-yeartwentyone #introduction {
+        position: relative;
+        bottom: 0;
+        color: white;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        flex: 0 0 25%;
+        max-width: 25%;
+        min-width: 25%;
+    }
+    .introtext {
+        overflow: overlay;
+        max-height: 56vh;
+    }
+    .page-template-yeartwentyone #introduction p {
+        margin: 2rem;
+        margin-right: 3rem;
+        font-size: 0.9rem;
+    }
+    .page-template-yeartwentyone main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 75%;
+        min-width: 75%;
+        flex: 0 0 75%;
+        position: relative;
+        overflow: overlay;
+        max-height: 91vh;
+    }
+    .page-template-yeartwentyone #listfruit {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 0;
+    }
+    .page-template-yeartwentyone #fruit {
+        box-sizing: border-box;
+        flex: 0 0 100%;
+        max-width: 33.3%;
+        min-width: 33.3%;
+        height: 35vh;
+        background-size: cover;
+        position: relative;
+    }
+    .page-template-yeartwentyone .imagefruit {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+    .page-template-yeartwentyone #fruitdetail {
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 15vh;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 17px;
+    }
+    .page-template-yeartwentyone #fruit .name {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: black;
+        margin-bottom: -1.2rem;
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 10px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    .page-template-yeartwentyone #fruit .job {
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 20px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        font-size: 20px;
+        background-color: pink;
+        color: #black;
+        font-weight: bolder;
+    }
+    .job-bg {}
+    /* single Post styles */
     .single-post main {
         padding-top: 0;
         padding-bottom: 0;
@@ -221,4 +477,5 @@ Template: twentytwentyone
     .coral {
         color: coral;
     }
+    /*                                              single page styles                           */
 }
