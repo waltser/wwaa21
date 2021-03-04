@@ -37,13 +37,13 @@ if ( $arr_posts->have_posts() ) :
 				<div id="fruit">
 				<a class="modal-link"  href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">
 
-					<div class='imagefruit' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
+					<div class='imagefruit  fade-in' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
 
 					<div id="fruitdetail">
-						<div class="name name2">
+						<div class="name name2 fade-in-left">
 							<?php the_sub_field('name'); ?>
 						</div>
-						<span class="job-bg job-bg2">	<span class="job job2">
+						<span class="job-bg job-bg2 fade-in-left-delay">	<span class="job job2 fade-in-left-delay">
 							<?php the_sub_field('job'); ?>
 		</span>	</span>
 					</div>
