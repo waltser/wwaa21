@@ -1,24 +1,28 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+/*
+ * Template Name: 2021
+ * description: >-
+  Page template without sidebar
  */
 
- get_header(); ?>
+get_header(); ?>
 
 
 <div id="listfruit">
-	<?php while (have_posts()) : the_post(); ?>
+<?php
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'category_name' => 'year2021',
+    'posts_per_page' => 15,
+);
+$arr_posts = new WP_Query( $args );
+ 
+if ( $arr_posts->have_posts() ) :
+ 
+    while ( $arr_posts->have_posts() ) :
+        $arr_posts->the_post();
+        ?>
 		<?php if (have_rows('fruit')) : ?>
 			<?php while (have_rows('fruit')) : the_row();
 				// Get sub field values.
@@ -40,13 +44,12 @@
 					</a>
 
 				</div>
-
-
 			<?php endwhile; ?>
 		<?php endif; ?>
 	<?php endwhile; // end of the loop. 
 	?>
 </div>
+<?php endif; ?>
 <?php
 
 get_footer();
