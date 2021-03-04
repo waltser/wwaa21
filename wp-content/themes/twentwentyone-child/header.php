@@ -22,25 +22,5 @@
 
 	<?php get_template_part( 'template-parts/header/site-header' ); ?>
 
-	<div id="content" class="site-content">
-		<div id="primary" class="content-area">
 	
-        <div id="introduction">
-		<div class="bannerlogo" ><img class="bannerlogopic"
-     src="http://localhost/wordpress/wp-content/uploads/2021/03/wwaa21Logo.png"
-     alt="wwaa21 logo"></div>
-		<div class="introtext">
-<?php
-    // query for the about page
-    $your_query = new WP_Query( 'pagename=description' );
-    // "loop" through query (even though it's just one page) 
-    while ( $your_query->have_posts() ) : $your_query->the_post();
-        the_content();
-    endwhile;
-    // reset post data (important!)
-    wp_reset_postdata();
-?>
-</div>
-</div>
-
 			<main id="main" class="site-main" role="main">
