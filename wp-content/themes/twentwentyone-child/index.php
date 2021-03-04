@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -14,7 +15,7 @@
  * @since Twenty Twenty-One 1.0
  */
 
- get_header(); ?>
+get_header(); ?>
 
 
 <div id="listfruit">
@@ -24,18 +25,18 @@
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
 				<div id="fruit">
-				<a class="modal-link"  href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">
+					<a class="modal-link" href="<?php echo esc_url(get_permalink(get_page_by_title('Monthly Events'))); ?>">
 
-					<div class='imagefruit' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
+						<div class='imagefruit' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
 
-					<div id="fruitdetail">
-						<div class="name">
-							<?php the_sub_field('name'); ?>
+						<div id="fruitdetail">
+							<div class="name">
+								<?php the_sub_field('name'); ?>
+							</div>
+							<span class="job-bg"> <span class="job">
+									<?php the_sub_field('job'); ?>
+								</span> </span>
 						</div>
-						<span class="job-bg">	<span class="job">
-							<?php the_sub_field('job'); ?>
-		</span>	</span>
-					</div>
 
 					</a>
 
