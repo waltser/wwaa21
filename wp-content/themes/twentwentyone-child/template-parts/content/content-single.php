@@ -23,7 +23,7 @@
 				$image = get_sub_field('image'); ?>
 				<div id="leftcol">
 
-					<img class='imagefruit' src="<?php echo esc_url($image['url']); ?>">
+					<img class='imagefruit fade-in' src="<?php echo esc_url($image['url']); ?>">
 					<div class="bio">
 							<?php the_field('bio'); ?>
 						</div>
