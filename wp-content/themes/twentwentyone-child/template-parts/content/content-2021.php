@@ -13,7 +13,7 @@
 
 <main id="main" class="site-main" role="main">
 
-<div id="listfruit">
+<div id="listwoman">
 <?php
 $args = array(
     'post_type' => 'post',
@@ -28,16 +28,16 @@ if ( $arr_posts->have_posts() ) :
     while ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
         ?>
-		<?php if (have_rows('fruit')) : ?>
-			<?php while (have_rows('fruit')) : the_row();
+		<?php if (have_rows('woman')) : ?>
+			<?php while (have_rows('woman')) : the_row();
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
-				<div id="fruit">
+				<div id="woman">
 				<a class="modal-link"  href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">
 
-					<div class='imagefruit fade-in' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
+					<div class='imagewoman fade-in' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
 
-					<div id="fruitdetail">
+					<div id="womandetail">
 						<div class="name name2 fade-in-left">
 							<?php the_sub_field('name'); ?>
 						</div>

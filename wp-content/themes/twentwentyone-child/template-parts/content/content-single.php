@@ -17,13 +17,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<?php if (have_rows('fruit')) : ?>
-			<?php while (have_rows('fruit')) : the_row();
+<?php if (have_rows('woman')) : ?>
+			<?php while (have_rows('woman')) : the_row();
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
 				<div id="leftcol">
 
-					<img class='imagefruit fade-in' src="<?php echo esc_url($image['url']); ?>">
+					<img class='imagewoman fade-in' src="<?php echo esc_url($image['url']); ?>">
 					<div class="bio">
 							<?php the_field('bio'); ?>
 						</div>
@@ -35,10 +35,10 @@
 
 	
 
-					<div id="fruitcontent">
-					<?php if (have_rows('fruit')) : ?>
-			<?php while (have_rows('fruit')) : the_row();?>
-					<div id="fruitdetail">
+					<div id="womancontent">
+					<?php if (have_rows('woman')) : ?>
+			<?php while (have_rows('woman')) : the_row();?>
+					<div id="womandetail">
 						<div class="name">
 							<?php the_sub_field('name'); ?>
 						</div>
@@ -55,17 +55,17 @@
 			<?php while (have_rows('contact')) : the_row();?>
 					
 					<div id="contact">
-						<div class="twitter fruitsm">
-							<a href="<?php the_sub_field('twitter'); ?>"><i class="fab fa-twitter coral">	</i></a>
+						<div class="twitter womansm">
+							<a href="<?php the_sub_field('twitter'); ?>"><i class="fab fa-twitter pink">	</i></a>
 							
 						</div>
-						<div class="linkedin fruitsm">
-						<a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin coral">	</i></a>
+						<div class="linkedin womansm">
+						<a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin pink">	</i></a>
 
 						
 						</div>
-						<div class="tofruit fruitsm">
-						<a href="<?php the_sub_field('mail'); ?>"><i class="fas fa-envelope-open-text coral"></i></a>
+						<div class="towoman womansm">
+						<a href="<?php the_sub_field('mail'); ?>"><i class="fas fa-envelope-open-text pink"></i></a>
 
 							
 						</div>

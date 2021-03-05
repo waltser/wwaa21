@@ -18,18 +18,18 @@
 get_header(); ?>
 
 
-<div id="listfruit">
+<div id="listwoman">
 	<?php while (have_posts()) : the_post(); ?>
-		<?php if (have_rows('fruit')) : ?>
-			<?php while (have_rows('fruit')) : the_row();
+		<?php if (have_rows('woman')) : ?>
+			<?php while (have_rows('woman')) : the_row();
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
-				<div id="fruit">
+				<div id="woman">
 					<a class="modal-link" href="<?php echo esc_url(get_permalink(get_page_by_title('Monthly Events'))); ?>">
 
-						<div class='imagefruit' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
+						<div class='imagewoman' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
 
-						<div id="fruitdetail">
+						<div id="womandetail">
 							<div class="name">
 								<?php the_sub_field('name'); ?>
 							</div>
