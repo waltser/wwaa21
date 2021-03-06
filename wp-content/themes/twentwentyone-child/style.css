@@ -1,4 +1,4 @@
-            /*
+/*
 Theme Name: Twenty Twenty-One Child Theme
 Theme URI: https://wordpress.org/themes/twentytwentyone/
 Author: the WordPress team
@@ -7,1114 +7,1086 @@ Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the
 Author: GGG
 Template: twentytwentyone
 */
-            
-             ::selection {
-                color: black;
-                background: pink;
-            }
-            
-            .site-main>* {
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            
-            @media (min-width: 768px) {
-                /*
+
+ ::selection {
+    color: black;
+    background: pink;
+}
+
+.site-main>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    /*
                 
                 header
                 
                 
                 */
-                #masthead {
-                    height: 9vh;
-                    min-height: 80px;
-                    padding: initial;
-                }
-                .site-logo {
-                    width: initial !important;
-                    padding-bottom: initial !important;
-                    padding-left: 1vh;
-                    border-bottom: none !important;
-                    margin: 1vh 1vh;
-                }
-                .site-logo img {
-                    width: 30px;
-                    height: auto;
-                }
-                .site-branding {
-                    margin-left: 1vh;
-                }
-                .site-title,
-                .site-title>a {
-                    text-decoration: none;
-                    color: black !important;
-                    font-weight: bold !important;
-                }
-                .site-title>a:hover {
-                    text-decoration: none;
-                    color: pink;
-                    font-weight: bold !important;
-                }
-                .site-title>a:focus {
-                    text-decoration: none !important;
-                    background: pink !important;
-                    font-weight: bold !important;
-                }
-                .primary-navigation {
-                    margin-right: 2vw;
-                }
-                .site-header {
-                    max-width: 100vw !important;
-                    margin-left: 0;
-                    margin-right: 0;
-                    flex-wrap: nowrap;
-                }
-                /*                        
+    #masthead {
+        height: 9vh;
+        min-height: 80px;
+        padding: initial;
+    }
+    .site-logo {
+        width: initial !important;
+        padding-bottom: initial !important;
+        padding-left: 1vh;
+        border-bottom: none !important;
+        margin: 1vh 1vh;
+    }
+    .site-logo img {
+        width: 30px;
+        height: auto;
+    }
+    .site-branding {
+        margin-left: 1vh;
+    }
+    .site-title,
+    .site-title>a {
+        text-decoration: none;
+        color: black !important;
+        font-weight: bold !important;
+    }
+    .site-title>a:hover {
+        text-decoration: none;
+        color: pink;
+        font-weight: bold !important;
+    }
+    .site-title>a:focus {
+        text-decoration: none !important;
+        background: pink !important;
+        font-weight: bold !important;
+    }
+    .primary-navigation {
+        margin-right: 2vw;
+    }
+    .site-header {
+        max-width: 100vw !important;
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: nowrap;
+    }
+    /*                        
                 
                 
                   home page styles         
                   
                   
                       */
-                html {
-                    overflow-x: hidden !important;
-                    height: 100vh;
-                    min-height: 100vh;
-                    max-height: 100vh;
-                    width: 100vw;
-                    min-width: 100vw;
-                    max-width: 100vw;
-                    margin: 0;
-                    padding: 0;
-                }
-                .home #content {
-                    height: 100%;
-                }
-                .home #primary {
-                    display: flex;
-                    flex-flow: row wrap;
-                }
-                .home .bannerlogo {
-                    background-color: white !important;
-                    background-repeat: no-repeat !important;
-                    background-position: center center !important;
-                    width: 100%;
-                    min-height: 35vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .bannerlogopic {
-                    margin-right: 10px;
-                    width: 100%;
-                    max-width: 250px;
-                    height: auto;
-                }
-                .home #introduction {
-                    position: relative;
-                    bottom: 0;
-                    color: white;
-                    left: 0;
-                    bottom: 0;
-                    background-color: black;
-                    flex: 0 0 25%;
-                    max-width: 25%;
-                    min-width: 25%;
-                }
-                .introtext {
-                    overflow: overlay;
-                    max-height: 56vh;
-                }
-                .home #introduction p {
-                    margin: 2rem;
-                    margin-right: 3rem;
-                    font-size: 0.9rem;
-                }
-                .home main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 75%;
-                    min-width: 75%;
-                    flex: 0 0 75%;
-                    position: relative;
-                    overflow: overlay;
-                    max-height: 91vh;
-                }
-                .home #listwoman {
-                    display: flex;
-                    flex-flow: row wrap;
-                    padding-top: 0;
-                }
-                .home #woman {
-                    box-sizing: border-box;
-                    flex: 0 0 100%;
-                    max-width: 33.3%;
-                    min-width: 33.3%;
-                    height: 35vh;
-                    background-size: cover;
-                    position: relative;
-                }
-                .home .imagewoman {
-                    background-size: cover !important;
-                    background-position: center !important;
-                    background-repeat: no-repeat !important;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    filter: brightness(80%);
-                }
-                .home #womandetail {
-                    background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-                    height: 15vh;
-                    position: absolute;
-                    bottom: 0px;
-                    width: 100%;
-                    padding: 17px;
-                }
-                .home #woman .name {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    color: black;
-                    margin-bottom: -1.2rem;
-                    display: table;
-                    margin: 0px 10px 0px 0px;
-                    padding: 0px 5px 0px 5px;
-                    background-color: white;
-                    text-transform: uppercase;
-                }
-                .home #woman .job {
-                    display: table;
-                    margin: 0px 20px 0px 0px;
-                    padding: 0px 5px 0px 5px;
-                    font-size: 20px;
-                    background-color: pink;
-                    color: #black;
-                    font-weight: bolder;
-                }
-                /*              
+    html {
+        overflow-x: hidden !important;
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        min-width: 100vw;
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .home #content {
+        height: 100%;
+    }
+    .home #primary {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .home .bannerlogo {
+        background-color: white !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        width: 100%;
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerlogopic {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .home #introduction {
+        position: relative;
+        bottom: 0;
+        color: white;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        flex: 0 0 25%;
+        max-width: 25%;
+        min-width: 25%;
+    }
+    .introtext {
+        overflow: overlay;
+        max-height: 56vh;
+    }
+    .home #introduction p {
+        margin: 2rem;
+        margin-right: 3rem;
+        font-size: 0.9rem;
+    }
+    .home main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 75%;
+        min-width: 75%;
+        flex: 0 0 75%;
+        position: relative;
+        overflow: overlay;
+        max-height: 91vh;
+    }
+    .home #listwoman {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 0;
+    }
+    .home #woman {
+        box-sizing: border-box;
+        flex: 0 0 100%;
+        max-width: 33.3%;
+        min-width: 33.3%;
+        height: 35vh;
+        background-size: cover;
+        position: relative;
+    }
+    .home .imagewoman {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+    .home #womandetail {
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 15vh;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 17px;
+    }
+    #woman .name {
+        font-size: 1.7rem;
+        font-weight: bolder;
+        color: black;
+        display: table;
+        margin: 0px 10px 0px 0px;
+        padding: 0px 5px 0px 5px;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    #woman .job {
+        display: table;
+        margin: 0px 20px 0px 0px;
+        padding: 0px 5px 0px 5px;
+        font-size: 1.1rem;
+        background-color: pink;
+        color: black;
+        font-weight: bolder;
+    }
+    /*              
 
                  year 2020 page styles   
                  
                  */
-                .page-template-yeartwenty #content {
-                    height: 100%;
-                }
-                .page-template-yeartwenty #primary {
-                    display: flex;
-                    flex-flow: row wrap;
-                }
-                .page-template-yeartwenty .bannerlogo {
-                    background-color: white !important;
-                    background-repeat: no-repeat !important;
-                    background-position: center center !important;
-                    width: 100%;
-                    min-height: 35vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .bannerlogopic {
-                    margin-right: 10px;
-                    width: 100%;
-                    max-width: 250px;
-                    height: auto;
-                }
-                .page-template-yeartwenty #introduction {
-                    position: relative;
-                    bottom: 0;
-                    color: white;
-                    left: 0;
-                    bottom: 0;
-                    background-color: black;
-                    flex: 0 0 25%;
-                    max-width: 25%;
-                    min-width: 25%;
-                }
-                .introtext {
-                    overflow: overlay;
-                    max-height: 56vh;
-                }
-                .page-template-yeartwenty #introduction p {
-                    margin: 2rem;
-                    margin-right: 3rem;
-                    font-size: 0.9rem;
-                }
-                .page-template-yeartwenty main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 75%;
-                    min-width: 75%;
-                    flex: 0 0 75%;
-                    position: relative;
-                    overflow: overlay;
-                    max-height: 91vh;
-                }
-                .page-template-yeartwenty #listwoman {
-                    display: flex;
-                    flex-flow: row wrap;
-                    padding-top: 0;
-                }
-                .page-template-yeartwenty #woman {
-                    box-sizing: border-box;
-                    flex: 0 0 100%;
-                    max-width: 33.3%;
-                    min-width: 33.3%;
-                    height: 35vh;
-                    background-size: cover;
-                    position: relative;
-                }
-                .page-template-yeartwenty .imagewoman {
-                    background-size: cover !important;
-                    background-position: center !important;
-                    background-repeat: no-repeat !important;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    filter: brightness(80%);
-                }
-                .page-template-yeartwenty #womandetail {
-                    background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-                    height: 15vh;
-                    position: absolute;
-                    bottom: 0px;
-                    width: 100%;
-                    padding: 17px;
-                }
-                .page-template-yeartwenty #woman .name {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    color: black;
-                    margin-bottom: -1.2rem;
-                    display: table;
-                    margin: 0px 10px 0px 0px;
-                    padding: 0px 5px 0px 5px;
-                    background-color: white;
-                    text-transform: uppercase;
-                }
-                .page-template-yeartwenty #woman .job {
-                    display: table;
-                    margin: 0px 20px 0px 0px;
-                    padding: 0px 5px 0px 5px;
-                    font-size: 20px;
-                    background-color: pink;
-                    color: #black;
-                    font-weight: bolder;
-                }
-                /*                                                       year 2021 page styles                                      */
-                .page-template-yeartwentyone #content {
-                    height: 100%;
-                }
-                .page-template-yeartwentyone #primary {
-                    display: flex;
-                    flex-flow: row wrap;
-                }
-                .page-template-yeartwentyone .bannerlogo {
-                    background-color: white !important;
-                    background-repeat: no-repeat !important;
-                    background-position: center center !important;
-                    width: 100%;
-                    min-height: 35vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .bannerlogopic {
-                    margin-right: 10px;
-                    width: 100%;
-                    max-width: 250px;
-                    height: auto;
-                }
-                .page-template-yeartwentyone #introduction {
-                    position: relative;
-                    bottom: 0;
-                    color: white;
-                    left: 0;
-                    bottom: 0;
-                    background-color: black;
-                    flex: 0 0 25%;
-                    max-width: 25%;
-                    min-width: 25%;
-                }
-                .introtext {
-                    overflow: overlay;
-                    max-height: 56vh;
-                }
-                .page-template-yeartwentyone #introduction p {
-                    margin: 2rem;
-                    margin-right: 3rem;
-                    font-size: 0.9rem;
-                }
-                .page-template-yeartwentyone main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 75%;
-                    min-width: 75%;
-                    flex: 0 0 75%;
-                    position: relative;
-                    overflow: overlay;
-                    max-height: 91vh;
-                }
-                .page-template-yeartwentyone #listwoman {
-                    display: flex;
-                    flex-flow: row wrap;
-                    padding-top: 0;
-                }
-                .page-template-yeartwentyone #woman {
-                    box-sizing: border-box;
-                    flex: 0 0 100%;
-                    max-width: 33.3%;
-                    min-width: 33.3%;
-                    height: 35vh;
-                    background-size: cover;
-                    position: relative;
-                }
-                .page-template-yeartwentyone .imagewoman {
-                    background-size: cover !important;
-                    background-position: center !important;
-                    background-repeat: no-repeat !important;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    filter: brightness(80%);
-                }
-                .page-template-yeartwentyone #womandetail {
-                    background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-                    height: 15vh;
-                    position: absolute;
-                    bottom: 0px;
-                    width: 100%;
-                    padding: 17px;
-                }
-                .page-template-yeartwentyone #woman .name {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    color: black;
-                    margin-bottom: -1.2rem;
-                    display: table;
-                    /* keep the background color wrapped tight */
-                    margin: 0px 10px 0px 0px;
-                    /* keep the table centered */
-                    padding: 0px 5px 0px 5px;
-                    background-color: white;
-                    text-transform: uppercase;
-                }
-                .page-template-yeartwentyone #woman .job {
-                    display: table;
-                    /* keep the background color wrapped tight */
-                    margin: 0px 20px 0px 0px;
-                    /* keep the table centered */
-                    padding: 0px 5px 0px 5px;
-                    font-size: 20px;
-                    background-color: pink;
-                    color: black;
-                    font-weight: bolder;
-                }
-                /*   
+    .page-template-yeartwenty #content {
+        height: 100%;
+    }
+    .page-template-yeartwenty #primary {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .page-template-yeartwenty .bannerlogo {
+        background-color: white !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        width: 100%;
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerlogopic {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .page-template-yeartwenty #introduction {
+        position: relative;
+        bottom: 0;
+        color: white;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        flex: 0 0 25%;
+        max-width: 25%;
+        min-width: 25%;
+    }
+    .introtext {
+        overflow: overlay;
+        max-height: 56vh;
+    }
+    .page-template-yeartwenty #introduction p {
+        margin: 2rem;
+        margin-right: 3rem;
+        font-size: 0.9rem;
+    }
+    .page-template-yeartwenty main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 75%;
+        min-width: 75%;
+        flex: 0 0 75%;
+        position: relative;
+        overflow: overlay;
+        max-height: 91vh;
+    }
+    .page-template-yeartwenty #listwoman {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 0;
+    }
+    .page-template-yeartwenty #woman {
+        box-sizing: border-box;
+        flex: 0 0 100%;
+        max-width: 33.3%;
+        min-width: 33.3%;
+        height: 35vh;
+        background-size: cover;
+        position: relative;
+    }
+    .page-template-yeartwenty .imagewoman {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+    .page-template-yeartwenty #womandetail {
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 15vh;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 17px;
+    }
+    /*                                                       year 2021 page styles                                      */
+    .page-template-yeartwentyone #content {
+        height: 100%;
+    }
+    .page-template-yeartwentyone #primary {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .page-template-yeartwentyone .bannerlogo {
+        background-color: white !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        width: 100%;
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerlogopic {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .page-template-yeartwentyone #introduction {
+        position: relative;
+        bottom: 0;
+        color: white;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        flex: 0 0 25%;
+        max-width: 25%;
+        min-width: 25%;
+    }
+    .introtext {
+        overflow: overlay;
+        max-height: 56vh;
+    }
+    .page-template-yeartwentyone #introduction p {
+        margin: 2rem;
+        margin-right: 3rem;
+        font-size: 0.9rem;
+    }
+    .page-template-yeartwentyone main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 75%;
+        min-width: 75%;
+        flex: 0 0 75%;
+        position: relative;
+        overflow: overlay;
+        max-height: 91vh;
+    }
+    .page-template-yeartwentyone #listwoman {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 0;
+    }
+    .page-template-yeartwentyone #woman {
+        box-sizing: border-box;
+        flex: 0 0 100%;
+        max-width: 33.3%;
+        min-width: 33.3%;
+        height: 35vh;
+        background-size: cover;
+        position: relative;
+    }
+    .page-template-yeartwentyone .imagewoman {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+    .page-template-yeartwentyone #womandetail {
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 15vh;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 17px;
+    }
+    /*   
                 
             
                 Partners
                 
                 
                 */
-                .partnersintro {
-                    margin-top: 2em;
-                    margin-bottom: 2em;
-                }
-                .partnersintro p {
-                    font-size: 1rem;
-                }
-                .page-template-partners .content {
-                    background: linear-gradient(90deg, rgba(50, 41, 45, 1) 0%, rgba(0, 0, 0, 1) 100%) !important;
-                }
-                .page-template-partners main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 55%;
-                    min-width: 55%;
-                    max-height: 100vh;
-                    margin-bottom: 10%;
-                }
-                .page-template-partners #partner {
-                    padding-top: 2vh;
-                    border-radius: 5px;
-                    background-color: white;
-                    display: flex;
-                    align-items: flex-start;
-                    margin-bottom: 14px;
-                    box-shadow: 5px 5px 15px #eee0e0;
-                }
-                .page-template-partners .partnerlogo {
-                    margin-left: 2vh;
-                    width: 180px;
-                    max-width: 15vw;
-                    height: auto;
-                }
-                .page-template-partners .bio {
-                    padding-top: 1rem;
-                }
-                .page-template-partners #partnerdescription {
-                    padding-left: 2vw;
-                    padding-right: 3vw;
-                    margin-bottom: 2vh;
-                }
-                .page-template-partners .interview {
-                    padding-bottom: 10vh;
-                }
-                .page-template-partners .partnername {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    display: table;
-                    /* keep the background color wrapped tight */
-                    margin: 0px 20px 0px 0px;
-                    /* keep the table centered */
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    font-size: 20px;
-                    background-color: pink;
-                    color: black;
-                    font-weight: bolder;
-                }
-                .page-template-partners .partnerdescription {
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    margin-top: 1vh;
-                    margin-bottom: 2vh;
-                }
-                .page-template-partners .partnersite {
-                    padding-right: 2rem;
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    margin-bottom: 2vh;
-                }
-                .pink {
-                    color: pink;
-                }
-                /* single Post styles */
-                .single-post main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 70%;
-                    min-width: 70%;
-                    max-height: 100vh;
-                    margin-bottom: 10%;
-                }
-                .single-post article {
-                    background-color: #f8F8F8;
-                    display: flex;
-                }
-                #leftcol {
-                    background-color: unset;
-                    min-width: 33.3%;
-                    padding-top: 2vh;
-                    padding-left: 2vh;
-                    padding-right: 5vh;
-                    padding-bottom: 0;
-                    font-size: 0.8rem;
-                }
-                .single-post .imagewoman {
-                    width: 100%;
-                    height: auto;
-                }
-                .single-post .bio {
-                    padding-top: 1rem;
-                }
-                .single-post #womancontent {
-                    padding-left: 1vh;
-                    padding-right: 10vh;
-                }
-                .single-post #introduction {
-                    display: none;
-                }
-                .single-post .interview {
-                    padding-bottom: 10vh;
-                }
-                .single-post #womandetail {
-                    border-bottom: 1px dotted blue;
-                }
-                .single-post #contact {
-                    margin-top: 1vh;
-                    margin-bottom: 2vh;
-                    display: flex;
-                    width: 100px;
-                    justify-content: space-between;
-                }
-                .single-post #contact>* {
-                    color: red !important;
-                }
-                .single-post .name {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                }
-                .single-post .job {
-                    font-size: 1.5rem;
-                    margin-bottom: 1vh;
-                }
-                .single-post .interview h2 {}
-                .pink {
-                    color: pink;
-                }
-                /*                                             About                        */
-                .page-template-about main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 75%;
-                    min-width: 75%;
-                    flex: 0 0 75%;
-                    max-height: 91vh;
-                }
-                .page-template-about .entry-content {}
-                .page-template-about .entry-content * {
-                    max-width: 75%;
-                    min-width: 75%;
-                }
-            }
-            /* Mobile 
+    .partnersintro {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .partnersintro p {
+        font-size: 1rem;
+    }
+    .page-template-partners .content {
+        background: linear-gradient(90deg, rgba(50, 41, 45, 1) 0%, rgba(0, 0, 0, 1) 100%) !important;
+    }
+    .page-template-partners main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 55%;
+        min-width: 55%;
+        max-height: 100vh;
+        margin-bottom: 10%;
+    }
+    .page-template-partners #partner {
+        padding-top: 2vh;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 14px;
+        box-shadow: 5px 5px 15px #eee0e0;
+    }
+    .page-template-partners .partnerlogo {
+        margin-left: 2vh;
+        width: 180px;
+        max-width: 15vw;
+        height: auto;
+    }
+    .page-template-partners .bio {
+        padding-top: 1rem;
+    }
+    .page-template-partners #partnerdescription {
+        padding-left: 2vw;
+        padding-right: 3vw;
+        margin-bottom: 2vh;
+    }
+    .page-template-partners .interview {
+        padding-bottom: 10vh;
+    }
+    .page-template-partners .partnername {
+        font-size: 2rem;
+        font-weight: bolder;
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 20px 0px 0px;
+        /* keep the table centered */
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+        background-color: pink;
+        color: black;
+        font-weight: bolder;
+    }
+    .page-template-partners .partnerdescription {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+    .page-template-partners .partnersite {
+        padding-right: 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2vh;
+    }
+    .pink {
+        color: pink;
+    }
+    /* single Post styles */
+    .single-post main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 70%;
+        min-width: 70%;
+        max-height: 100vh;
+        margin-bottom: 10%;
+    }
+    .single-post article {
+        background-color: #f8F8F8;
+        display: flex;
+    }
+    #leftcol {
+        background-color: unset;
+        width: 33.3%;
+        min-width: 33.3%;
+        padding-top: 2vh;
+        padding-left: 2vh;
+        padding-right: 20px;
+        padding-bottom: 0;
+        font-size: 0.8rem;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    .single-post .imagewoman {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto;
+    }
+    .single-post .bio {
+        padding-top: 1rem;
+    }
+    .single-post #womancontent {
+        padding-left: 1vh;
+        padding-right: 10vh;
+    }
+    .single-post #introduction {
+        display: none;
+    }
+    .single-post .interview {
+        padding-bottom: 10vh;
+    }
+    .single-post #womandetail {
+        border-bottom: 1px dotted black;
+    }
+    .single-post #contact {
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+    }
+    .single-post .name {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .single-post .job {
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+    }
+    .pink {
+        color: pink;
+    }
+    /*                                             About                        */
+    .page-template-about main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 75%;
+        min-width: 75%;
+        flex: 0 0 75%;
+        max-height: 91vh;
+    }
+    .page-template-about .entry-content * {
+        max-width: 75%;
+        min-width: 75%;
+    }
+}
+
+
+/* Mobile 
        __   __          ___ 
  |\/| /  \ |__) | |    |__  
  |  | \__/ |__) | |___ |___ 
                             
 */
-            
-            @media screen and (min-width:320px) and (max-width: 768px) {
-                /*
+
+@media screen and (min-width:320px) and (max-width: 768px) {
+    /*
                 
                 header
                 
                 */
-                #masthead {
-                    height: 9vh;
-                    min-height: 80px;
-                    padding: initial;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .site-logo {
-                    width: initial !important;
-                    padding-bottom: 1vh !important;
-                    padding-left: 1vh;
-                    border-bottom: none !important;
-                    margin: 1vh 1vh;
-                    position: absolute;
-                    left: 0px;
-                }
-                .site-logo img {
-                    width: 30px;
-                    height: auto;
-                }
-                .site-branding {
-                    margin-left: 1vh;
-                }
-                .site-title,
-                .site-title>a {
-                    display: none;
-                    text-decoration: none;
-                    color: black !important;
-                    font-weight: bold !important;
-                }
-                .site-title>a:hover {
-                    text-decoration: none;
-                    color: pink;
-                    font-weight: bold !important;
-                }
-                .site-title>a:focus {
-                    text-decoration: none !important;
-                    background: pink !important;
-                    font-weight: bold !important;
-                }
-                .primary-navigation {
-                    top: 10px !important;
-                    margin-right: 2vw;
-                }
-                .site-header {
-                    max-width: 100vw !important;
-                    margin-left: 0;
-                    margin-right: 0;
-                    flex-wrap: nowrap;
-                }
-                /*             
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+    #masthead {
+        height: 9vh;
+        min-height: 80px;
+        padding: initial;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .site-logo {
+        width: initial !important;
+        padding-bottom: 1vh !important;
+        padding-left: 1vh;
+        border-bottom: none !important;
+        margin: 1vh 1vh;
+        position: absolute;
+        left: 0px;
+    }
+    .site-logo img {
+        width: 30px;
+        height: auto;
+    }
+    .site-branding {
+        margin-left: 1vh;
+    }
+    .site-title,
+    .site-title>a {
+        display: none;
+        text-decoration: none;
+        color: black !important;
+        font-weight: bold !important;
+    }
+    .site-title>a:hover {
+        text-decoration: none;
+        color: pink;
+        font-weight: bold !important;
+    }
+    .site-title>a:focus {
+        text-decoration: none !important;
+        background: pink !important;
+        font-weight: bold !important;
+    }
+    .primary-navigation {
+        top: 10px !important;
+        margin-right: 2vw;
+    }
+    .site-header {
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: nowrap;
+    }
+    /*             
                 
                         
                   year 2020 page 
                   
                   
                   */
-                .page-template-yeartwenty #content {
-                    height: 100%;
-                }
-                .page-template-yeartwenty .bannerlogo {
-                    background-color: white !important;
-                    background-repeat: no-repeat !important;
-                    background-position: center center !important;
-                    width: 100%;
-                    min-height: 35vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .bannerlogopic {
-                    margin-right: 10px;
-                    width: 100%;
-                    max-width: 250px;
-                    height: auto;
-                }
-                .page-template-yeartwenty #introduction {
-                    position: relative;
-                    bottom: 0;
-                    color: white;
-                    left: 0;
-                    bottom: 0;
-                    background-color: black;
-                }
-                .page-template-yeartwenty .introtext {
-                    padding-bottom: 1vh;
-                }
-                .page-template-yeartwenty #introduction p {
-                    margin: 2rem;
-                    margin-right: 3rem;
-                    font-size: 0.9rem;
-                }
-                .page-template-yeartwenty main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                }
-                .page-template-yeartwenty #listwoman {
-                    display: flex;
-                    flex-flow: row wrap;
-                    padding-top: 0;
-                }
-                .page-template-yeartwenty #woman {
-                    box-sizing: border-box;
-                    flex: 0 0 100%;
-                    height: 60vh;
-                    background-size: cover;
-                    position: relative;
-                }
-                .page-template-yeartwenty .imagewoman {
-                    background-size: cover !important;
-                    background-position: center !important;
-                    background-repeat: no-repeat !important;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    filter: brightness(80%);
-                }
-                .page-template-yeartwenty #womandetail {
-                    background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-                    height: 30vh;
-                    position: absolute;
-                    bottom: 0px;
-                    width: 100%;
-                    padding: 17px;
-                }
-                .page-template-yeartwenty #woman .name {
-                    font-size: 1.5rem;
-                    font-weight: bolder;
-                    color: black;
-                    display: table;
-                    /* keep the background color wrapped tight */
-                    margin: 2rem 10px 0px 0px;
-                    /* keep the table centered */
-                    padding: 0px 5px 0px 5px;
-                    background-color: white;
-                    text-transform: uppercase;
-                }
-                .page-template-yeartwenty #woman .job {
-                    display: table;
-                    /* keep the background color wrapped tight */
-                    margin: 0px 20px 0px 0px;
-                    /* keep the table centered */
-                    padding: 0px 5px 0px 5px;
-                    font-size: 1.2rem;
-                    background-color: pink;
-                    color: black;
-                    font-weight: bolder;
-                }
-                /*                                                  
+    .page-template-yeartwenty #content {
+        height: 100%;
+    }
+    .page-template-yeartwenty .bannerlogo {
+        background-color: white !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        width: 100%;
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerlogopic {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .page-template-yeartwenty #introduction {
+        position: relative;
+        bottom: 0;
+        color: white;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+    }
+    .page-template-yeartwenty .introtext {
+        padding-bottom: 1vh;
+    }
+    .page-template-yeartwenty #introduction p {
+        margin: 2rem;
+        margin-right: 3rem;
+        font-size: 0.9rem;
+    }
+    .page-template-yeartwenty main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .page-template-yeartwenty #listwoman {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 0;
+    }
+    .page-template-yeartwenty #woman {
+        box-sizing: border-box;
+        flex: 0 0 100%;
+        height: 60vh;
+        background-size: cover;
+        position: relative;
+    }
+    .page-template-yeartwenty .imagewoman {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+    .page-template-yeartwenty #womandetail {
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 30vh;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 17px;
+    }
+    .page-template-yeartwenty #woman .name {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: black;
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 2rem 10px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    .page-template-yeartwenty #woman .job {
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 20px 0px 0px;
+        /* keep the table centered */
+        padding: 0px 5px 0px 5px;
+        font-size: 1.2rem;
+        background-color: pink;
+        color: black;
+        font-weight: bolder;
+    }
+    /*                                                  
             
 
                 year 2021 page                  
                               
                 
                 */
-                .page-template-yeartwentyone #content {
-                    height: 100%;
-                }
-                .page-template-yeartwentyone .bannerlogo {
-                    background-color: white !important;
-                    background-repeat: no-repeat !important;
-                    background-position: center center !important;
-                    width: 100%;
-                    min-height: 35vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .bannerlogopic {
-                    margin-right: 10px;
-                    width: 100%;
-                    max-width: 250px;
-                    height: auto;
-                }
-                .page-template-yeartwentyone #introduction {
-                    position: relative;
-                    bottom: 0;
-                    color: white;
-                    left: 0;
-                    bottom: 0;
-                    background-color: black;
-                }
-                .page-template-yeartwentyone .introtext {
-                    padding-bottom: 1vh;
-                }
-                .page-template-yeartwentyone #introduction p {
-                    margin: 2rem;
-                    margin-right: 3rem;
-                    font-size: 0.9rem;
-                }
-                .page-template-yeartwentyone main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                }
-                .page-template-yeartwentyone #listwoman {
-                    display: flex;
-                    flex-flow: row wrap;
-                    padding-top: 0;
-                }
-                .page-template-yeartwentyone #woman {
-                    box-sizing: border-box;
-                    flex: 0 0 100%;
-                    height: 60vh;
-                    background-size: cover;
-                    position: relative;
-                }
-                .page-template-yeartwentyone .imagewoman {
-                    background-size: cover !important;
-                    background-position: center !important;
-                    background-repeat: no-repeat !important;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    filter: brightness(80%);
-                }
-                .page-template-yeartwentyone #womandetail {
-                    background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-                    height: 30vh;
-                    position: absolute;
-                    bottom: 0px;
-                    width: 100%;
-                    padding: 17px;
-                }
-                .page-template-yeartwentyone #woman .name {
-                    font-size: 1.5rem;
-                    font-weight: bolder;
-                    color: black;
-                    display: table;
-                    margin: 2rem 10px 0px 0px;
-                    padding: 0px 5px 0px 5px;
-                    background-color: white;
-                    text-transform: uppercase;
-                }
-                .page-template-yeartwentyone #woman .job {
-                    display: table;
-                    margin: 0px 20px 0px 0px;
-                    padding: 0px 5px 0px 5px;
-                    font-size: 1.2rem;
-                    background-color: pink;
-                    color: black;
-                    font-weight: bolder;
-                }
-                /*   
+    .page-template-yeartwentyone #content {
+        height: 100%;
+    }
+    .page-template-yeartwentyone .bannerlogo {
+        background-color: white !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        width: 100%;
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerlogopic {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .page-template-yeartwentyone #introduction {
+        position: relative;
+        bottom: 0;
+        color: white;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+    }
+    .page-template-yeartwentyone .introtext {
+        padding-bottom: 1vh;
+    }
+    .page-template-yeartwentyone #introduction p {
+        margin: 2rem;
+        margin-right: 3rem;
+        font-size: 0.9rem;
+    }
+    .page-template-yeartwentyone main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .page-template-yeartwentyone #listwoman {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 0;
+    }
+    .page-template-yeartwentyone #woman {
+        box-sizing: border-box;
+        flex: 0 0 100%;
+        height: 60vh;
+        background-size: cover;
+        position: relative;
+    }
+    .page-template-yeartwentyone .imagewoman {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+    }
+    .page-template-yeartwentyone #womandetail {
+        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
+        height: 30vh;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 17px;
+    }
+    .page-template-yeartwentyone #woman .name {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: black;
+        display: table;
+        margin: 2rem 10px 0px 0px;
+        padding: 0px 5px 0px 5px;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    .page-template-yeartwentyone #woman .job {
+        display: table;
+        margin: 0px 20px 0px 0px;
+        padding: 0px 5px 0px 5px;
+        font-size: 1.2rem;
+        background-color: pink;
+        color: black;
+        font-weight: bolder;
+    }
+    /*   
                 
             
                 Partners
                 
                 
                 */
-                .partnersintro {
-                    margin-top: 2em;
-                    margin-bottom: 2em;
-                }
-                .partnersintro p {
-                    font-size: 1rem;
-                }
-                .page-template-partners .content {
-                    background: linear-gradient(90deg, rgba(50, 41, 45, 1) 0%, rgba(0, 0, 0, 1) 100%) !important;
-                }
-                .page-template-partners main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 90%;
-                    min-width: 90%;
-                    max-height: 100vh;
-                    margin-bottom: 10%;
-                }
-                .page-template-partners #partner {
-                    padding-top: 2vh;
-                    border-radius: 5px;
-                    background-color: white;
-                    display: flex;
-                    align-items: flex-start;
-                    margin-bottom: 14px;
-                    box-shadow: 5px 5px 15px #eee0e0;
-                }
-                .page-template-partners .partnerlogo {
-                    margin-left: 2vh;
-                    width: 180px;
-                    max-width: 15vw;
-                    height: auto;
-                }
-                .page-template-partners .bio {
-                    padding-top: 1rem;
-                }
-                .page-template-partners #partnerdescription {
-                    padding-left: 2vw;
-                    padding-right: 3vw;
-                    margin-bottom: 2vh;
-                }
-                .page-template-partners .interview {
-                    padding-bottom: 10vh;
-                }
-                .page-template-partners .partnername {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    display: table;
-                    /* keep the background color wrapped tight */
-                    margin: 0px 20px 0px 0px;
-                    /* keep the table centered */
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    font-size: 20px;
-                    background-color: pink;
-                    color: black;
-                    font-weight: bolder;
-                }
-                .page-template-partners .partnerdescription {
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    margin-top: 1vh;
-                    margin-bottom: 2vh;
-                }
-                .page-template-partners .partnersite {
-                    padding-right: 2rem;
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    margin-bottom: 2vh;
-                }
-                .pink {
-                    color: pink;
-                }
-                /* 
+    .partnersintro {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .partnersintro p {
+        font-size: 1rem;
+    }
+    .page-template-partners .content {
+        background: linear-gradient(90deg, rgba(50, 41, 45, 1) 0%, rgba(0, 0, 0, 1) 100%) !important;
+    }
+    .page-template-partners main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 90%;
+        min-width: 90%;
+        max-height: 100vh;
+        margin-bottom: 10%;
+    }
+    .page-template-partners #partner {
+        padding-top: 2vh;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 14px;
+        box-shadow: 5px 5px 15px #eee0e0;
+    }
+    .page-template-partners .partnerlogo {
+        margin-left: 2vh;
+        width: 180px;
+        max-width: 15vw;
+        height: auto;
+    }
+    .page-template-partners .bio {
+        padding-top: 1rem;
+    }
+    .page-template-partners #partnerdescription {
+        padding-left: 2vw;
+        padding-right: 3vw;
+        margin-bottom: 2vh;
+    }
+    .page-template-partners .interview {
+        padding-bottom: 10vh;
+    }
+    .page-template-partners .partnername {
+        font-size: 2rem;
+        font-weight: bolder;
+        display: table;
+        /* keep the background color wrapped tight */
+        margin: 0px 20px 0px 0px;
+        /* keep the table centered */
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+        background-color: pink;
+        color: black;
+        font-weight: bolder;
+    }
+    .page-template-partners .partnerdescription {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+    .page-template-partners .partnersite {
+        padding-right: 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2vh;
+    }
+    .pink {
+        color: pink;
+    }
+    /* 
                 
                 single Post styles ( Women Single Page )
                 
                 
                 */
-                .single-post main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-height: 100vh;
-                    margin-bottom: 10%;
-                }
-                .single-post article {
-                    background-color: #f8F8F8;
-                }
-                #leftcol {
-                    background-color: unset;
-                    padding-top: 2vh;
-                    padding-left: 2vh;
-                    padding-right: 2vh;
-                    padding-bottom: 0;
-                    font-size: 0.8rem;
-                }
-                .single-post .imagewoman {
-                    width: 100%;
-                    height: auto;
-                }
-                .single-post .bio {
-                    display: none;
-                    padding-top: 1rem;
-                }
-                .single-post #womancontent {
-                    margin-top: 0;
-                    padding-left: 2vh;
-                    padding-right: 10vh;
-                }
-                .single-post #introduction {
-                    display: none;
-                }
-                .single-post .interview {
-                    padding-bottom: 10vh;
-                }
-                .single-post #womandetail {
-                    border-bottom: 1px dotted black;
-                }
-                .single-post #contact {
-                    margin-top: 1vh;
-                    margin-bottom: 2vh;
-                    display: flex;
-                    width: 100px;
-                    justify-content: space-between;
-                }
-                .single-post #contact>* {
-                    color: red !important;
-                }
-                .single-post .name {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                }
-                .single-post .job {
-                    font-size: 1.5rem;
-                    margin-bottom: 1vh;
-                }
-                .single-post .interview h2 {}
-                .pink {
-                    color: pink;
-                }
-                /*                                             About                        */
-                .page-template-about main {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    max-width: 75%;
-                    min-width: 75%;
-                }
-                .page-template-about .entry-content {}
-                .page-template-about .entry-content * {
-                    max-width: 75%;
-                    min-width: 75%;
-                }
-            }
-            /*animation
+    .single-post main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-height: 100vh;
+        margin-bottom: 10%;
+    }
+    .single-post article {
+        background-color: #f8F8F8;
+    }
+    #leftcol {
+        background-color: unset;
+        padding-top: 2vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        padding-bottom: 0;
+        font-size: 0.8rem;
+    }
+    .single-post .imagewoman {
+        width: 100%;
+        height: auto;
+    }
+    .single-post .bio {
+        display: none;
+        padding-top: 1rem;
+    }
+    .single-post #womancontent {
+        margin-top: 0;
+        padding-left: 2vh;
+        padding-right: 10vh;
+    }
+    .single-post #introduction {
+        display: none;
+    }
+    .single-post .interview {
+        padding-bottom: 10vh;
+    }
+    .single-post #womandetail {
+        border-bottom: 1px dotted black;
+    }
+    .single-post #contact {
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+    }
+    .single-post .name {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .single-post .job {
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+    }
+    .pink {
+        color: pink;
+    }
+    /*                                             About                        */
+    .page-template-about main {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 75%;
+        min-width: 75%;
+    }
+    .page-template-about .entry-content * {
+        max-width: 75%;
+        min-width: 75%;
+    }
+}
+
+
+/*animation
                        ___    __        __  
  /\  |\ | |  |\/|  /\   |  | /  \ |\ | /__` 
 /~~\ | \| |  |  | /~~\  |  | \__/ | \| .__/ 
                                             
 
  */
-            
-            .fade-in-left {
-                -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-                animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-            }
-            /* ----------------------------------------------
+
+.fade-in-left {
+    -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+/* ----------------------------------------------
  * Generated by Animista on 2021-3-4 15:57:27
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-            /**
+
+
+/**
  * ----------------------------------------
  * animation fade-in-left
  * ----------------------------------------
  */
-            
-            @-webkit-keyframes fade-in-left {
-                0% {
-                    -webkit-transform: translateX(-50px);
-                    transform: translateX(-50px);
-                    opacity: 0;
-                }
-                100% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-            
-            @keyframes fade-in-left {
-                0% {
-                    -webkit-transform: translateX(-50px);
-                    transform: translateX(-50px);
-                    opacity: 0;
-                }
-                100% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-            
-            .fade-in-left-delay {
-                -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-                animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-            }
-            /* ----------------------------------------------
+
+@-webkit-keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-left-delay {
+    -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+
+/* ----------------------------------------------
  * Generated by Animista on 2021-3-4 15:59:10
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-            /**
+
+
+/**
  * ----------------------------------------
  * animation fade-in-left-delay
  * ----------------------------------------
  */
-            
-            @-webkit-keyframes fade-in-left-delay {
-                0% {
-                    -webkit-transform: translateX(-50px);
-                    transform: translateX(-50px);
-                    opacity: 0;
-                }
-                100% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-            
-            @keyframes fade-in-left-delay {
-                0% {
-                    -webkit-transform: translateX(-50px);
-                    transform: translateX(-50px);
-                    opacity: 0;
-                }
-                100% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-            
-            .fade-in {
-                -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-                animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-            }
-            /* ----------------------------------------------
+
+@-webkit-keyframes fade-in-left-delay {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left-delay {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+/* ----------------------------------------------
  * Generated by Animista on 2021-3-4 16:13:33
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-            /**
+
+
+/**
  * ----------------------------------------
  * animation fade-in
  * ----------------------------------------
  */
-            
-            @-webkit-keyframes fade-in {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            
-            @keyframes fade-in {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

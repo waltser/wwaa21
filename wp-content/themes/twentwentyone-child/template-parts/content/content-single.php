@@ -17,27 +17,22 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<?php if (have_rows('woman')) : ?>
-			<?php while (have_rows('woman')) : the_row();
+<?php if (have_rows('fruit')) : ?>
+			<?php while (have_rows('fruit')) : the_row();
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
 				<div id="leftcol">
-
 					<img class='imagewoman fade-in' src="<?php echo esc_url($image['url']); ?>">
 					<div class="bio">
 							<?php the_field('bio'); ?>
 						</div>
-
 						</div>
-
 						<?php endwhile; ?>
 		<?php endif; ?>
 
-	
-
-					<div id="womancontent">
-					<?php if (have_rows('woman')) : ?>
-			<?php while (have_rows('woman')) : the_row();?>
+						<div id="womancontent">
+					<?php if (have_rows('fruit')) : ?>
+			<?php while (have_rows('fruit')) : the_row();?>
 					<div id="womandetail">
 						<div class="name">
 							<?php the_sub_field('name'); ?>

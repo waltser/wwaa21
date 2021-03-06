@@ -20,8 +20,8 @@ get_header(); ?>
 
 <div id="listwoman">
 	<?php while (have_posts()) : the_post(); ?>
-		<?php if (have_rows('woman')) : ?>
-			<?php while (have_rows('woman')) : the_row();
+		<?php if (have_rows('fruit')) : ?>
+			<?php while (have_rows('fruit')) : the_row();
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
 				<div id="woman">

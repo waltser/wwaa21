@@ -18,6 +18,24 @@
 
 </div><!-- #page -->
 
+
+<script>
+$( document ).ready(function() {
+
+moveWomenDetail();
+
+});
+
+function moveWomenDetail() {
+var win = $(window).width();
+if (win < 768) {
+	$('#womendetail').after($('.imagewoman'));  
+} else {
+	$('#womendetail').append($('#contact')); 
+}
+}
+</script>
+
 <?php wp_footer(); ?>
 
 </body>
