@@ -20,7 +20,7 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 
 </header><!-- #masthead -->
 
-<div id="content" class="site-content">
+<div id="content" class="site-content  sgl-cat-women">
 		<div id="primary" class="content-area">
         <div id="introduction">
 		<div class="bannerlogo" ><img class="bannerlogopic"

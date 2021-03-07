@@ -19,24 +19,41 @@
 </div><!-- #page -->
 
 
-<script>
-$( document ).ready(function() {
-
-moveWomenDetail();
-
-});
-
-function moveWomenDetail() {
-var win = $(window).width();
-if (win < 768) {
-	$('#womendetail').after($('.imagewoman'));  
-} else {
-	$('#womendetail').append($('#contact')); 
-}
-}
-</script>
 
 <?php wp_footer(); ?>
 
+
+<script>
+
+
+$( document ).ready(function() {
+	moveWomenDetail();
+	function moveWomenDetail() {
+var win = $(window).width();
+if (win < 768) {
+	$('#womendetail').after($('.imagewoman'));
+	$('#contact').after($('#womendetail'));  
+
+} else {
+	$('#womendetail').before($('.interview')); 
+	$('#contact').after($('#womendetail')); 
+}
+}
+
+});
+</script>
+
+<!-- <script>
+
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
+</script> -->
 </body>
 </html>

@@ -15,7 +15,7 @@
  * @since Twenty Twenty-One 1.0
  */
 
-get_header(); ?>
+get_header(); ?> 
 
 
 <div id="listwoman">
@@ -24,7 +24,16 @@ get_header(); ?>
 			<?php while (have_rows('fruit')) : the_row();
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
-				<div id="woman">
+<!-- 
+
+$image = get_sub_field('image'); 
+				$comingsoon = get_field('coming_soon');?>
+
+				<div id="woman" class="<?php echo esc_attr($comingsoon['value']); ?>">
+					<a class="modal-link" href="<?php echo esc_url(get_permalink(get_page_by_title('Monthly Events'))); ?>">
+ -->
+
+				<div id="woman" class="<?php the_field('coming_soon'); ?>">
 					<a class="modal-link" href="<?php echo esc_url(get_permalink(get_page_by_title('Monthly Events'))); ?>">
 
 						<div class='imagewoman' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>

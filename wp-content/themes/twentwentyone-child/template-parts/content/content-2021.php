@@ -32,10 +32,17 @@ if ( $arr_posts->have_posts() ) :
 			<?php while (have_rows('fruit')) : the_row();
 				// Get sub field values.
 				$image = get_sub_field('image'); ?>
-				<div id="woman">
+				<div id="woman"class="<?php the_field('coming_soon'); ?> ">
+				<?php if( get_field('coming_soon') == 'coming_soon' ) {
+echo'<div class="coming_text">Coming Soon!</div>';
+    // Do something.
+}
+?>
 				<a class="modal-link"  href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">
 
 					<div class='imagewoman fade-in' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
+					
+	
 
 					<div id="womandetail">
 						<div class="name name2 fade-in-left">
