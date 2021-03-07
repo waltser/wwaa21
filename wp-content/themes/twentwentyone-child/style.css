@@ -19,20 +19,30 @@ Template: twentytwentyone
 }
 
 .coming_text {
-    color: white;
+    position: absolute;
+    color: rgb(160, 123, 129);
     z-index: 10 !important;
+    top: 17vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-transform: uppercase;
 }
 
-.coming_soon {
-    pointer-events: none;
-}
+#woman.partners {}
 
 .coming_soon #womandetail .name,
-.coming_soon #womandetail .job-bg {
+.coming_soon #womandetail .job-bg,
+.rapidlinks #womandetail .name,
+.rapidlinks #womandetail .job-bg,
+#woman.partners .name,
+#woman.partners .job-bg,
+#woman.about .name,
+#woman.about .job-bg {
     display: none !important;
 }
 
-.coming_soon #womandetail {
+.coming_soon #womandetail,
+.rapidlinks #womandetail {
     background: linear-gradient(0deg, rgba(50, 41, 45, 1) 0%, rgba(17, 15, 15, 0) 100%) !important;
     height: 15vh;
     position: absolute;

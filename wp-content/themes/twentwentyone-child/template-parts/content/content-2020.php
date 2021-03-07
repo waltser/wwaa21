@@ -21,7 +21,7 @@ $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
     'category_name' => 'year2020',
-    'posts_per_page' => 15,
+    'posts_per_page' => 25,
 );
 $arr_posts = new WP_Query( $args );
  
@@ -40,7 +40,7 @@ echo'<div class="coming_text">Coming Soon!</div>';
     // Do something.
 }
 ?>
-				<a class="modal-link"  href="<?php echo esc_url( get_permalink( get_page_by_title( 'Monthly Events' ) ) ); ?>">
+		
 
 					<div class='imagewoman  fade-in' style="background: url('<?php echo esc_url($image['url']); ?>') "></div>
 					
