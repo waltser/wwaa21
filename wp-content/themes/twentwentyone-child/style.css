@@ -18,6 +18,11 @@ Template: twentytwentyone
     margin-bottom: 0;
 }
 
+.coming_soon {
+    pointer-events: none;
+    ;
+}
+
 .coming_text {
     position: absolute;
     color: rgb(160, 123, 129);
@@ -37,7 +42,9 @@ Template: twentytwentyone
 #woman.partners .name,
 #woman.partners .job-bg,
 #woman.about .name,
-#woman.about .job-bg {
+#woman.about .job-bg,
+#woman.insta .name,
+#woman.insta .job-bg {
     display: none !important;
 }
 

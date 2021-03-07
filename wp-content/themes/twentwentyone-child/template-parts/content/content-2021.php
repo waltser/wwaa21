@@ -41,6 +41,8 @@ echo'<div class="coming_text">Coming Soon!</div>';
 		<?php if( get_field('coming_soon') == 'coming_soon' ) : ?>
 			
 <a class="modal-link"  href="https://21.womenwhoadvance.eu/ " >
+<?php elseif( get_field('coming_soon') == 'insta' ): ?>
+	<a class="modal-link"  href="https://www.instagram.com/womenwhoadvance/" >
 <?php elseif( get_field('coming_soon') != 'coming_soon' || 'live' ): ?>
 	<a class="modal-link"  href="https://21.womenwhoadvance.eu/<?php the_field('coming_soon'); ?> " >
 
