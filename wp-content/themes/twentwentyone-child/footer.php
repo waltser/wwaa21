@@ -23,9 +23,9 @@
 <?php wp_footer(); ?>
 
 
-<script>
+<!-- <script>
 
-/* 
+
 $( document ).ready(function() {
 	moveWomenDetail();
 	function moveWomenDetail() {
@@ -41,9 +41,9 @@ if (win < 768) {
 }
 
 });
- */
+ 
 
-</script>
+</script> -->
 
 <!-- <script>
 
