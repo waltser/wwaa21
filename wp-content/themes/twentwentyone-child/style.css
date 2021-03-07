@@ -18,7 +18,47 @@ Template: twentytwentyone
     margin-bottom: 0;
 }
 
+.coming_text {
+    color: white;
+    z-index: 10 !important;
+}
+
+.coming_soon {
+    pointer-events: none;
+}
+
+.coming_soon #womandetail .name,
+.coming_soon #womandetail .job-bg {
+    display: none !important;
+}
+
+.coming_soon #womandetail {
+    background: linear-gradient(0deg, rgba(50, 41, 45, 1) 0%, rgba(17, 15, 15, 0) 100%) !important;
+    height: 15vh;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 17px;
+}
+
+.coming_soon .imagewoman {
+    -webkit-filter: brightness(0.2) grayscale(0.7) saturate(0.3) !important;
+    /* Safari 6.0 - 9.0 */
+    filter: brightness(0.2) grayscale(0.7) saturate(0.3) !important;
+}
+
 @media (min-width: 768px) {
+    html {
+        overflow-x: hidden !important;
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        min-width: 100vw;
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
     /*
                 
                 header
@@ -76,102 +116,15 @@ Template: twentytwentyone
                   
                   
                       */
-    html {
-        overflow-x: hidden !important;
-        height: 100vh;
-        min-height: 100vh;
-        max-height: 100vh;
-        width: 100vw;
-        min-width: 100vw;
-        max-width: 100vw;
-        margin: 0;
-        padding: 0;
-    }
-    .home #content {
-        height: 100%;
-    }
-    .home #primary {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .home .bannerlogo {
-        background-color: white !important;
-        background-repeat: no-repeat !important;
-        background-position: center center !important;
-        width: 100%;
-        min-height: 35vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .bannerlogopic {
         margin-right: 10px;
         width: 100%;
         max-width: 250px;
         height: auto;
     }
-    .home #introduction {
-        position: relative;
-        bottom: 0;
-        color: white;
-        left: 0;
-        bottom: 0;
-        background-color: black;
-        flex: 0 0 25%;
-        max-width: 25%;
-        min-width: 25%;
-    }
     .introtext {
         overflow: overlay;
         max-height: 56vh;
-    }
-    .home #introduction p {
-        margin: 2rem;
-        margin-right: 3rem;
-        font-size: 0.9rem;
-    }
-    .home main {
-        padding-top: 0;
-        padding-bottom: 0;
-        max-width: 75%;
-        min-width: 75%;
-        flex: 0 0 75%;
-        position: relative;
-        overflow: overlay;
-        max-height: 91vh;
-    }
-    .home #listwoman {
-        display: flex;
-        flex-flow: row wrap;
-        padding-top: 0;
-    }
-    .home #woman {
-        box-sizing: border-box;
-        flex: 0 0 100%;
-        max-width: 33.3%;
-        min-width: 33.3%;
-        height: 35vh;
-        background-size: cover;
-        position: relative;
-    }
-    .home .imagewoman {
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        filter: brightness(80%);
-    }
-    .home #womandetail {
-        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-        height: 15vh;
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-        padding: 17px;
     }
     #woman .name {
         font-size: 1.7rem;
@@ -194,17 +147,17 @@ Template: twentytwentyone
     }
     /*              
 
-                 year 2020 page styles   
+                 year 2020 + twentyone page styles   
                  
                  */
-    .page-template-yeartwenty #content {
+    .sgl-cat-women #content {
         height: 100%;
     }
-    .page-template-yeartwenty #primary {
+    .sgl-cat-women #primary {
         display: flex;
         flex-flow: row wrap;
     }
-    .page-template-yeartwenty .bannerlogo {
+    .sgl-cat-women .bannerlogo {
         background-color: white !important;
         background-repeat: no-repeat !important;
         background-position: center center !important;
@@ -214,13 +167,7 @@ Template: twentytwentyone
         align-items: center;
         justify-content: center;
     }
-    .bannerlogopic {
-        margin-right: 10px;
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-    }
-    .page-template-yeartwenty #introduction {
+    .sgl-cat-women #introduction {
         position: relative;
         bottom: 0;
         color: white;
@@ -231,16 +178,12 @@ Template: twentytwentyone
         max-width: 25%;
         min-width: 25%;
     }
-    .introtext {
-        overflow: overlay;
-        max-height: 56vh;
-    }
-    .page-template-yeartwenty #introduction p {
+    .sgl-cat-women #introduction p {
         margin: 2rem;
         margin-right: 3rem;
         font-size: 0.9rem;
     }
-    .page-template-yeartwenty main {
+    .sgl-cat-women main {
         padding-top: 0;
         padding-bottom: 0;
         max-width: 75%;
@@ -250,12 +193,12 @@ Template: twentytwentyone
         overflow: overlay;
         max-height: 91vh;
     }
-    .page-template-yeartwenty #listwoman {
+    .sgl-cat-women #listwoman {
         display: flex;
         flex-flow: row wrap;
         padding-top: 0;
     }
-    .page-template-yeartwenty #woman {
+    .sgl-cat-women #woman {
         box-sizing: border-box;
         flex: 0 0 100%;
         max-width: 33.3%;
@@ -264,7 +207,7 @@ Template: twentytwentyone
         background-size: cover;
         position: relative;
     }
-    .page-template-yeartwenty .imagewoman {
+    .sgl-cat-women .imagewoman {
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -275,94 +218,7 @@ Template: twentytwentyone
         height: 100%;
         filter: brightness(80%);
     }
-    .page-template-yeartwenty #womandetail {
-        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-        height: 15vh;
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-        padding: 17px;
-    }
-    /*                                                       year 2021 page styles                                      */
-    .page-template-yeartwentyone #content {
-        height: 100%;
-    }
-    .page-template-yeartwentyone #primary {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .page-template-yeartwentyone .bannerlogo {
-        background-color: white !important;
-        background-repeat: no-repeat !important;
-        background-position: center center !important;
-        width: 100%;
-        min-height: 35vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .bannerlogopic {
-        margin-right: 10px;
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-    }
-    .page-template-yeartwentyone #introduction {
-        position: relative;
-        bottom: 0;
-        color: white;
-        left: 0;
-        bottom: 0;
-        background-color: black;
-        flex: 0 0 25%;
-        max-width: 25%;
-        min-width: 25%;
-    }
-    .introtext {
-        overflow: overlay;
-        max-height: 56vh;
-    }
-    .page-template-yeartwentyone #introduction p {
-        margin: 2rem;
-        margin-right: 3rem;
-        font-size: 0.9rem;
-    }
-    .page-template-yeartwentyone main {
-        padding-top: 0;
-        padding-bottom: 0;
-        max-width: 75%;
-        min-width: 75%;
-        flex: 0 0 75%;
-        position: relative;
-        overflow: overlay;
-        max-height: 91vh;
-    }
-    .page-template-yeartwentyone #listwoman {
-        display: flex;
-        flex-flow: row wrap;
-        padding-top: 0;
-    }
-    .page-template-yeartwentyone #woman {
-        box-sizing: border-box;
-        flex: 0 0 100%;
-        max-width: 33.3%;
-        min-width: 33.3%;
-        height: 35vh;
-        background-size: cover;
-        position: relative;
-    }
-    .page-template-yeartwentyone .imagewoman {
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        filter: brightness(80%);
-    }
-    .page-template-yeartwentyone #womandetail {
+    .sgl-cat-women #womandetail {
         background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
         height: 15vh;
         position: absolute;
@@ -607,10 +463,10 @@ Template: twentytwentyone
                   
                   
                   */
-    .page-template-yeartwenty #content {
+    .sgl-cat-women #content {
         height: 100%;
     }
-    .page-template-yeartwenty .bannerlogo {
+    .sgl-cat-women .bannerlogo {
         background-color: white !important;
         background-repeat: no-repeat !important;
         background-position: center center !important;
@@ -626,7 +482,7 @@ Template: twentytwentyone
         max-width: 250px;
         height: auto;
     }
-    .page-template-yeartwenty #introduction {
+    .sgl-cat-women #introduction {
         position: relative;
         bottom: 0;
         color: white;
@@ -634,31 +490,31 @@ Template: twentytwentyone
         bottom: 0;
         background-color: black;
     }
-    .page-template-yeartwenty .introtext {
+    .sgl-cat-women .introtext {
         padding-bottom: 1vh;
     }
-    .page-template-yeartwenty #introduction p {
+    .sgl-cat-women #introduction p {
         margin: 2rem;
         margin-right: 3rem;
         font-size: 0.9rem;
     }
-    .page-template-yeartwenty main {
+    .sgl-cat-women main {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .page-template-yeartwenty #listwoman {
+    .sgl-cat-women #listwoman {
         display: flex;
         flex-flow: row wrap;
         padding-top: 0;
     }
-    .page-template-yeartwenty #woman {
+    .sgl-cat-women #woman {
         box-sizing: border-box;
         flex: 0 0 100%;
         height: 60vh;
         background-size: cover;
         position: relative;
     }
-    .page-template-yeartwenty .imagewoman {
+    .sgl-cat-women .imagewoman {
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -669,7 +525,7 @@ Template: twentytwentyone
         height: 100%;
         filter: brightness(80%);
     }
-    .page-template-yeartwenty #womandetail {
+    .sgl-cat-women #womandetail {
         background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
         height: 30vh;
         position: absolute;
@@ -677,7 +533,7 @@ Template: twentytwentyone
         width: 100%;
         padding: 17px;
     }
-    .page-template-yeartwenty #woman .name {
+    .sgl-cat-women #woman .name {
         font-size: 1.5rem;
         font-weight: bolder;
         color: black;
@@ -689,7 +545,7 @@ Template: twentytwentyone
         background-color: white;
         text-transform: uppercase;
     }
-    .page-template-yeartwenty #woman .job {
+    .sgl-cat-women #woman .job {
         display: table;
         /* keep the background color wrapped tight */
         margin: 0px 20px 0px 0px;
@@ -702,101 +558,6 @@ Template: twentytwentyone
     }
     /*                                                  
             
-
-                year 2021 page                  
-                              
-                
-                */
-    .page-template-yeartwentyone #content {
-        height: 100%;
-    }
-    .page-template-yeartwentyone .bannerlogo {
-        background-color: white !important;
-        background-repeat: no-repeat !important;
-        background-position: center center !important;
-        width: 100%;
-        min-height: 35vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .bannerlogopic {
-        margin-right: 10px;
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-    }
-    .page-template-yeartwentyone #introduction {
-        position: relative;
-        bottom: 0;
-        color: white;
-        left: 0;
-        bottom: 0;
-        background-color: black;
-    }
-    .page-template-yeartwentyone .introtext {
-        padding-bottom: 1vh;
-    }
-    .page-template-yeartwentyone #introduction p {
-        margin: 2rem;
-        margin-right: 3rem;
-        font-size: 0.9rem;
-    }
-    .page-template-yeartwentyone main {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .page-template-yeartwentyone #listwoman {
-        display: flex;
-        flex-flow: row wrap;
-        padding-top: 0;
-    }
-    .page-template-yeartwentyone #woman {
-        box-sizing: border-box;
-        flex: 0 0 100%;
-        height: 60vh;
-        background-size: cover;
-        position: relative;
-    }
-    .page-template-yeartwentyone .imagewoman {
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        filter: brightness(80%);
-    }
-    .page-template-yeartwentyone #womandetail {
-        background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-        height: 30vh;
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-        padding: 17px;
-    }
-    .page-template-yeartwentyone #woman .name {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        color: black;
-        display: table;
-        margin: 2rem 10px 0px 0px;
-        padding: 0px 5px 0px 5px;
-        background-color: white;
-        text-transform: uppercase;
-    }
-    .page-template-yeartwentyone #woman .job {
-        display: table;
-        margin: 0px 20px 0px 0px;
-        padding: 0px 5px 0px 5px;
-        font-size: 1.2rem;
-        background-color: pink;
-        color: black;
-        font-weight: bolder;
-    }
-    /*   
                 
             
                 Partners
@@ -904,7 +665,6 @@ Template: twentytwentyone
         height: auto;
     }
     .single-post .bio {
-        display: none;
         padding-top: 1rem;
     }
     .single-post #womancontent {
