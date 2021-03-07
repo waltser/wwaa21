@@ -319,63 +319,60 @@ Template: twentytwentyone
     }
     /* single Post styles */
     .single-post main {
-        max-width: 764px !important;
         padding-top: 0;
         padding-bottom: 0;
+        max-width: 70%;
         min-width: 70%;
         max-height: 100vh;
         margin-bottom: 10%;
     }
     .single-post article {
         background-color: #f8F8F8;
+        display: flex;
+    }
+    #leftcol {
+        background-color: unset;
+        width: 33.3%;
+        min-width: 33.3%;
+        padding-top: 2vh;
+        padding-left: 2vh;
+        padding-right: 20px;
+        padding-bottom: 0;
+        font-size: 0.8rem;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
     }
     .single-post .imagewoman {
-        width: 40% !important;
-        margin-right: 2vw;
+        width: 100% !important;
+        max-width: 100% !important;
         height: auto;
     }
     .single-post .bio {
-        max-width: 593px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 0.9rem;
-        font-style: italic;
-    }
-    .single-post .bio p {
         padding-top: 1rem;
     }
     .single-post #womancontent {
-        padding-top: 3vh;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 593px;
+        padding-left: 1vh;
+        padding-right: 10vh;
     }
     .single-post #introduction {
         display: none;
     }
     .single-post .interview {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 593px;
         padding-bottom: 10vh;
     }
     .single-post .interview h4 {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+    .single-post .interview p {}
     .single-post .interview p,
     .single-post .interview li {
-        font-size: 1.2rem;
         margin-bottom: 2rem !important;
         line-height: 1.7rem;
     }
     .single-post #womandetail {
-        width: 60% !important;
-        max-width: 100%;
         border-bottom: 1px dotted black;
-    }
-    .womancontenthead {
-        display: flex;
     }
     .single-post #contact {
         margin-top: 1vh;
