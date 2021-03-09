@@ -8,6 +8,11 @@ Author: GGG
 Template: twentytwentyone
 */
 
+.cn-button.bootstrap {
+    color: #fff;
+    background: pink;
+}
+
  ::selection {
     color: black;
     background: pink;
@@ -193,6 +198,9 @@ Template: twentytwentyone
         max-width: 25%;
         min-width: 25%;
     }
+    .sgl-cat-women #introduction a {
+        color: pink;
+    }
     .sgl-cat-women #introduction p {
         margin: 2rem;
         margin-right: 3rem;
@@ -235,7 +243,7 @@ Template: twentytwentyone
     }
     .sgl-cat-women #womandetail {
         background: linear-gradient(0deg, rgba(255, 192, 203, 1) 0%, rgba(255, 192, 203, 0) 100%);
-        height: 15vh;
+        height: 20vh;
         position: absolute;
         bottom: 0px;
         width: 100%;
@@ -436,13 +444,6 @@ Template: twentytwentyone
                 header
                 
                 */
-    html,
-    body {
-        overflow-x: hidden;
-    }
-    body {
-        position: relative
-    }
     #masthead {
         height: 9vh;
         min-height: 80px;
@@ -499,6 +500,9 @@ Template: twentytwentyone
                   
                   
                   */
+    .sgl-cat-women #introduction a {
+        color: pink;
+    }
     .sgl-cat-women #content {
         height: 100%;
     }
@@ -601,7 +605,7 @@ Template: twentytwentyone
                 
                 */
     .partnersintro {
-        margin-top: 2em;
+        margin-top: 2rem !important;
         margin-bottom: 2em;
     }
     .partnersintro p {
@@ -743,6 +747,17 @@ Template: twentytwentyone
         max-width: 75%;
         min-width: 75%;
     }
+    .page-template-about .entry-header {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 2rem !important;
+        margin-bottom: 0;
+    }
+    .page-template-about .entry-title {
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 1px 1px pink;
+    }
 }
 
 
@@ -881,5 +896,11 @@ Template: twentytwentyone
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rapidlinks #womandetail {
+        height: 15vh;
     }
 }
